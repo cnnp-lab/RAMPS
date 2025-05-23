@@ -1,6 +1,5 @@
-# RAMPS
- Resection Automation Mask in Pre-operative space
-
+# RAMPS - Resections And Masks in Preoperative Space
+An automated pipeline that generates 3D masks of pre-operative tissue resected, leveraging existing software including FreeSurfer, SynthStrip, Sythnseg and ANTS to aid in this task.
 
 ## How to setup the code
 1. Clone this repository. 
