@@ -91,7 +91,7 @@ This code can be broken down into 3 steps -
 - This creates mask 2
 
 Here is an image outlining how it works
-![RAMPSworks]([https://github.com/ItCallum/RAMP/tree/main/FIG/](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/How_RAMPS_works.png))
+![RAMPSworks](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/How_RAMPS_works.png)
 
 
 
