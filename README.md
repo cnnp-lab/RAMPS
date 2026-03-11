@@ -1,6 +1,17 @@
 # RAMPS - Resections And Masks in Preoperative Space
 An automated pipeline that generates 3D masks of pre-operative tissue resected, leveraging existing software including FreeSurfer, SynthStrip, Sythnseg and ANTS to aid in this task.
 
+For a breif overview: 
+- RAMPS works by finding the cluster of difference between the pre and post operative t1w images.
+- Though the masks produce by RAMPS produce are inline with 'gold standard interpretation', RAMPS mask is slightly larger
+- While the pipeline can run without information of lobe and hemisphere, we recommend providing this information where possible, as it consistently yields the most accurate results.
+- We always recommened that mask outputs are manually inpsected to ensure they meet standards
+  
+## How to cite 
+If you use RAMPS please reference us using:
+
+Simpson C, Hall G, Duncan JS, Wang Y, Taylor PN. Automated generation of epilepsy surgery resection masks: The RAMPS pipeline. Imaging Neurosci (Camb). 2025 Sep 10;3:IMAG.a.147. doi: 10.1162/IMAG.a.147. PMID: 40948604; PMCID: PMC12423638.
+
 ## How to setup the code
 1. Clone this repository. 
 2. Create a virtual python 3.8.20 enviroment (e.g via conda https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) and install the requirements.txt. Example of code to do this is via the following.
