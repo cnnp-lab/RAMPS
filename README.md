@@ -59,7 +59,7 @@ Using a T1w pre- and post-operative image, as well as hemisphere and lobe of res
 - MASK CREATION : involves delineating the resection cavity in the post-operative space resection and then expanding to the pre-operative tissue boundary
 
 The overview of the RAMPS pipeline
-![RAMPSworks]([https://github.com/cnnp-lab/RAMPS/blob/main/FIG/How_RAMPS_works.png](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/HowRAMPSworks.png)
+![RAMPSworks](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/HowRAMPSworks.png)
 
 
 ### A - PREPARING
