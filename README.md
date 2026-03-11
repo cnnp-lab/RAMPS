@@ -53,10 +53,14 @@ python /Path_to/RAMP.py patient_X-PRE-OP-Scan.nii.gz patient_X-POST-OP-Scan.nii.
 ```
 
 ## How this code works
-This code can be broken down into 3 steps - 
-- PREPARING which is the steps taken to get the pre and post scans ready for registration  
-- REGISTRATION which is code needed to align the post-op image into the pre-operative space
-- CREATION which is the code that creates the mask once the images are alligned in the same space
+Using a T1w pre- and post-operative image, as well as hemisphere and lobe of resection, RAMPS generates a mask of resected pre-operative tissue in 3 steps - 
+- DATA PREPARATION : series of steps are undertaken to remove noise from the image, extract the brain tissue and create a lobe atlas map of the brain 
+- REGISTRATION : uses ANTs registration to align the post-operative brain to the pre-operative
+- MASK CREATION : involves delineating the resection cavity in the post-operative space resection and then expanding to the pre-operative tissue boundary
+
+The overview of the RAMPS pipeline
+![RAMPSworks]([https://github.com/cnnp-lab/RAMPS/blob/main/FIG/How_RAMPS_works.png](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/HowRAMPSworks.png)
+
 
 ### A - PREPARING
 - First convert the pre and post op images into orig resolution via ants resample_image_to_target
@@ -90,8 +94,6 @@ This code can be broken down into 3 steps -
 - add the difference the pre and post mask
 - This creates mask 2
 
-Here is an image outlining how it works
-![RAMPSworks](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/How_RAMPS_works.png)
 
 
 
