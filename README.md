@@ -22,13 +22,12 @@ conda activate RAMPenv
 pip install -r requirements.txt
 ```
 
-4. Clone the https://github.com/BBillot/SynthSeg repository and place it inside "Place_SynthSeg_here". No additional python modules has to be installed. Make sure to follow SynthSeg step 3 and place the additional models in the SynthSeg models folder. (Link to these additional models can be found here [Here](https://liveuclac-my.sharepoint.com/personal/rmappmb_ucl_ac_uk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frmappmb%5Fucl%5Fac%5Fuk%2FDocuments%2Fsynthseg%20models&ga=1)
-7. Ensure that freesurfer is installed (https://surfer.nmr.mgh.harvard.edu/) here is the link to the freesurfer set up [MAC tutorial](https://surfer.nmr.mgh.harvard.edu/fswiki//FS7_mac) and [Linux tutorial ](https://surfer.nmr.mgh.harvard.edu/fswiki//FS7_linux). Also check that the system enviroment 'FREESURFER_HOME' is set up and works correctly. To make this easier Its reccomened that you add somthing like the following to your shell startup (see freesurfer documentation for more information)
+3. Clone the https://github.com/BBillot/SynthSeg repository and place it inside "Place_SynthSeg_here". No additional python modules has to be installed. Make sure to follow SynthSeg step 3 and place the additional models in the SynthSeg models folder. (Extra information about this can be found on the SynthSeg page [Found here](https://github.com/BBillot/SynthSeg), due to an ongoing issue with the orignal storage of the models changing, please find the required models [here](https://github.com/BBillot/SynthSeg/issues/114) 
+4. Ensure that freesurfer is installed (https://surfer.nmr.mgh.harvard.edu/) here is the link to the freesurfer set up [MAC tutorial](https://surfer.nmr.mgh.harvard.edu/fswiki//FS7_mac) and [Linux tutorial ](https://surfer.nmr.mgh.harvard.edu/fswiki//FS7_linux). Also check that the system enviroment 'FREESURFER_HOME' is set up and works correctly. To make this easier Its reccomened that you add somthing like the following to your shell startup (see freesurfer documentation for more information)
 ```
 export FREESURFER_HOME=$HOME/freesurfer
 $ source $FREESURFER_HOME/SetUpFreeSurfer.sh
 ```
-
 
 ## Run the command
 Once all the python packages are installed and Freesurfer and SynthSeg is installed then you can test RAMP with the following 
