@@ -90,8 +90,8 @@ This code can be broken down into 3 steps -
 - add the difference the pre and post mask
 - This creates mask 2
 
-Here is an image outlining how it works (rough figure being worked on)
-![screenshot](https://github.com/ItCallum/RAMP/tree/main/FIG/RAMP_methods_FIG.png?raw=true)
+Here is an image outlining how it works
+![alt text]([https://github.com/ItCallum/RAMP/tree/main/FIG/](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/How_RAMPS_works.png))
 
 
 
