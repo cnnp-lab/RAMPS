@@ -2,6 +2,10 @@
 # RAMPS
 # Resection Automated Mask in Pre-operative Space
 # By Callum Simpson
+# 
+# If you use this code please cite 
+# Simpson C, Hall G, Duncan JS, Wang Y, Taylor PN. Automated generation of epilepsy surgery resection masks: The RAMPS pipeline. Imaging Neurosci (Camb). 2025 Sep 10;3:IMAG.a.147. doi: 10.1162/IMAG.a.147. PMID: 40948604; PMCID: PMC12423638.
+#
 # ========================================
 
 # The aim of this code is to segment the preoperative image tissue shown to be resected in the post op image.
@@ -922,7 +926,7 @@ Time_keeping = pd.concat([Time_keeping, pd.DataFrame(['RemoveHyper',recorded_tim
 
 
 # ===========================================
-# REGISTRATION - LETS TRY EVERYTHING AND PRAY
+# REGISTRATION - THIS MAY TAKE A MOMENT
 # ===========================================
 
 # This is for the bash script - these variables will be consistent across all mask creation runs
@@ -1032,7 +1036,7 @@ antsRegistrationSyN_reg_None_resected_then_resected_transformlist = [reg_None_re
 
 
 # ===========================================
-# make folders
+# make folders for making the resection masks
 # ===========================================
 
 start = time.time()
@@ -1460,6 +1464,9 @@ PreOP_Data_image.image_write(The_resection_mask_Final+"/PreOp_Image_in_PRE.nii.g
 print(" ========================================== ")
 print(" RAMPS completed")
 print(" Thank you for using RAMPS ")
+print(" If you please reference us using:")
+print(" Simpson C, Hall G, Duncan JS, Wang Y, Taylor PN. Automated generation of epilepsy surgery resection masks: The RAMPS pipeline.")
+print(" Imaging Neurosci (Camb). 2025 Sep 10;3:IMAG.a.147. doi: 10.1162/IMAG.a.147. PMID: 40948604; PMCID: PMC12423638. ")
 print(" ========================================== ")
 
 
