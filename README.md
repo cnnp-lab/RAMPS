@@ -85,9 +85,15 @@ Following registration, the post-operative image exists in the pre-operative spa
 - Step 13 - Boundary dilation : To ensure that the mask extends to the appropriate tissue boundary, a directional dilation is performed. If a given voxel on the boundary of the mask is within 3 voxels of CSF, all voxels between the two points are added to the mask. This stops the dilation into tissue that was not resected.
 - Step 14 - Additional cleaning : ANTs morphology is applied to fill any small cavities within the resection mask. Then the mask is multiplied by a binarised mask of the pre-operative lobe of resection to remove any voxels that might exist outside this region. Finally, the resection mask is resampled back into the pre-operative resolution.
 
+## Results from paper
 
+We show RAMPS preformance against a cohort of 87 manual masks, the results are seen here. 
 
+![RAMPSresults](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/RAMPS_results.png)
 
+Additionally we show RAMPS perfromance under a range of different resection cavity tasks. 
+
+![RAMPSresults](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/RAMPS_examples.png)
 
 
 
