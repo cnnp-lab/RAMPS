@@ -93,7 +93,7 @@ We show RAMPS preformance against a cohort of 87 manual masks, the results are s
 
 Additionally we show RAMPS perfromance under a range of different resection cavity tasks. 
 
-![RAMPSresults](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/RAMPS_examples.png)
+![RAMPSresults](https://github.com/cnnp-lab/RAMPS/blob/main/FIG/RAMPS_results_v2.png)
 
 
 
